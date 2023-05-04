@@ -1,0 +1,36 @@
+
+
+
+
+
+.address-body {
+    padding: 0 2rem 0 2rem;
+    height: auto;
+    text-align: center;
+    
+}
+
+.adr-head {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: .7rem;
+    color: var(--blue);
+    font-size: .8rem;
+}
+
+
+.adr-subtext {
+    color: rgb(66, 66, 66);
+}
+
+
+
+
+
+
+@media screen and (max-width:767px) {
+
+
+}
