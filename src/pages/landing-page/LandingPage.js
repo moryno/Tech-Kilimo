@@ -8,12 +8,10 @@ import Footer from "../../components/frontend/Footer";
 const LandingPage = () => {
   return (
     <>
-      <Navbar />
       <Hero />
       <HowItWorks />
       <MonitorAnalytics />
       <OurPromise />
-      <Footer />
     </>
   );
 };

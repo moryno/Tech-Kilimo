@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
 
 const Footer = () => {
   const formRef = useRef();
@@ -31,57 +32,82 @@ const Footer = () => {
     <main id="contact" className="bg-section ">
       <section className="container mx-auto">
         <article className="text-center">
-          <h1 className="font-bold text-2xl pt-5 md:text-4xl">Get in touch</h1>
+          <h1 className="font-semibold text-xl pt-5 md:text-3xl">
+            Get in touch
+          </h1>
         </article>
-        <section className="flex">
-          <section className="flex flex-col md:flex-row justify-around items-center">
-            <article className="md:w-6/12 m-5 p-5 flex flex-col justify-around md:h-[400px]">
-              <h1 className="text-3xl font-bold">
-                Interested in Helping out? Join with us now
-              </h1>
-              <h5 className="text-sm">
-                Receive updates on our progress, community initiatives
-              </h5>
-            </article>
-            <article className="md:w-6/12 m-5 p-5 flex flex-col justify-around md:h-[400px]">
-              <h3 className="font-bold">Ubuntu Dao</h3>
-              <p className="text-sm font-semibold">
-                Ubuntu DAO is a Decentralized verification system that uses a
-                DAO and blockchain technology to enable transparent and secure
-                consensus, allowing users to easily verify real-world scenarios
-                online and start community initiatives
-              </p>
-              <div>
-                <i class="bx bxl-twitter bx-md"></i>
-                <i class="bx bxl-facebook bx-md"></i>
-                <i class="bx bxl-instagram bx-md"></i>
-              </div>
-              <div className="flex flex-col md:flex-row justify-around w-[100%]">
-                <div className="my-2">
+        <section className="flex w-full h-[500px]">
+          <section className="md:w-6/12 p-5 h-full flex flex-col items-center">
+            <article className="w-full h-full flex flex-col justify-between">
+              <article className="flex flex-col gap-8">
+                <p className="text-sm font-normal">
+                  We’re here to help! Here are a few ways you can reach us:
+                </p>
+                <p className="text-sm font-medium">
+                  Phone: <span className="font-normal">+254 710 123 456</span>
+                </p>
+
+                <p className="text-sm font-medium">
+                  Email:{" "}
+                  <span className="font-normal">contact@contact.exchange</span>
+                </p>
+                <p className="text-sm font-normal">
+                  Or simply fill in the form below and we’ll get back to you.
+                </p>
+              </article>
+              <article className="flex flex-col md:flex-row justify-between w-full">
+                <div>
                   <h3 className="font-bold mb-3">About Us</h3>
                   <h4 className="text-sm my-1 ">Home</h4>
                   <h4 className="text-sm my-1 ">Features</h4>
                   <h4 className="text-sm my-1 ">Contact Us</h4>
                 </div>
-                <div className="my-2">
+                <div>
                   <h3 className="font-bold mb-3">Community</h3>
                   <h4 className="text-sm my-1 ">Twitter</h4>
                   <h4 className="text-sm my-1 ">Discord</h4>
                   <h4 className="text-sm my-1 ">Telegram</h4>
                 </div>
-                <div className="my-2">
-                  <h3 className="font-bold mb-3">Contact Us</h3>
-                  <h4 className="text-sm my-1 ">+254 799 559 285</h4>
-                  <h4 className="text-sm my-1 ">ubuntuDao@gmail.com</h4>
-                </div>
-              </div>
+                <article>
+                  <h3 className="font-bold mb-3">Socials</h3>
+                  <div className="flex gap-8">
+                    <a
+                      href={`https://twitter.com/MauriceNganga5`}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <div className="flex items-center cursor-pointer transition ease-in-out hover:scale-110  justify-center rounded-full">
+                        <FaTwitter size={"1.5rem"} />
+                      </div>
+                    </a>
+                    <a
+                      href={`https://github.com/moryno/`}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <div className="flex items-center cursor-pointer transition ease-in-out hover:scale-110  justify-center rounded-full">
+                        <FaGithub size={"1.5rem"} />
+                      </div>
+                    </a>
+                    <a
+                      href={`https://www.linkedin.com/in/mauricenganga`}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <div className="flex items-center cursor-pointer transition ease-in-out hover:scale-110 justify-center rounded-full">
+                        <FaLinkedin size={"1.5rem"} />
+                      </div>
+                    </a>
+                  </div>
+                </article>
+              </article>
             </article>
           </section>
-          <section className="container mx-auto p-5">
+          <section className="md:w-6/12 p-5 h-full">
             <form
               ref={formRef}
               onSubmit={handleSubmit}
-              className="w-full flex flex-wrap mt-5 flex-col lg:flex-row items-center gap-5"
+              className="w-full h-full flex flex-wrap flex-col lg:flex-row items-center gap-1"
             >
               <input
                 className="p-2 w-full lg:w-formLg xl:w-form ring-gray-300 ring-1 rounded-sm"
@@ -109,7 +135,7 @@ const Footer = () => {
                 rows="10"
                 placeholder="Message..."
               ></textarea>
-              <button className="bg-contactButton text-white font-semibold p-2 w-fit cursor-pointer">
+              <button className="bg-contactButton text-white font-medium p-2 w-fit cursor-pointer">
                 Send message
               </button>
               {success && (

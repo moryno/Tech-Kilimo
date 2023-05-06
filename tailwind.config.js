@@ -6,9 +6,9 @@ module.exports = {
       backgroundColor: {
         // bg: "#0096FF",
         //bg: "#006FC9",
-        bg: "#27AE60",
+        bg: "#20CD8D",
         landingBg: "#20CD8D",
-        topBarBg: "#20CD8D",
+        topBarBg: "#19CD8D",
         bgDark: "#3B96DD",
         bgLight: "#C3DAF9",
         light: "#eeedec",

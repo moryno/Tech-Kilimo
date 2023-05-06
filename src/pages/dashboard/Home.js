@@ -166,7 +166,7 @@ const Home = () => {
           </article>
         </section>
         <section className="mt-5">
-          <DataTable
+          {/* <DataTable
             data={bookings}
             columns={bookingColumns}
             keyExpr="bookingId"
@@ -175,7 +175,7 @@ const Home = () => {
             setRowClickItem={setRowClickItem}
             openConfirmationPopup={openConfirmationPopup}
             filterValues={bookingFilterValues}
-          />
+          /> */}
         </section>
       </section>
 

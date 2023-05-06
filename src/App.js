@@ -7,8 +7,10 @@ import { useSelector } from "react-redux";
 
 import Profile from "./pages/dashboard/Profile";
 import Home from "./pages/dashboard/Home";
-import Layout from "./components/dashboard/Layout";
 import LandingPage from "./pages/landing-page/LandingPage";
+import Platform from "./pages/landing-page/Platform";
+import Layout from "./layouts/Layout";
+import FrontendLayout from "./layouts/FrontendLayout";
 
 function App() {
   // const ProtectedRoute = ({ children }) => {
@@ -21,7 +23,17 @@ function App() {
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <LandingPage />,
+      element: <FrontendLayout />,
+      children: [
+        {
+          path: "/",
+          element: <LandingPage />,
+        },
+        {
+          path: "/platform",
+          element: <Platform />,
+        },
+      ],
     },
     {
       path: "/",
