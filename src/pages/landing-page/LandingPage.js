@@ -1,20 +1,21 @@
-import React from "react";
-import { Hero } from "../../components/frontend/hero/Hero";
-import { Products } from "../../components/frontend/products/Products";
-import { About } from "../../components/frontend//about/About";
-import { Testimonial } from "../../components/frontend/testimonial/Testimonial";
-import { Footer } from "../../components/frontend/footer/Footer";
-import { Navbar } from "../../components/frontend/navbar/Navbar";
+import Navbar from "../../components/frontend/Navbar";
+import Hero from "../../components/frontend/Hero";
+import HowItWorks from "../../components/frontend/HowItWorks";
+import MonitorAnalytics from "../../components/frontend/MonitorAnalytics";
+import OurPromise from "../../components/frontend/OurPromise";
+import Footer from "../../components/frontend/Footer";
 
-export const LandingPage = () => {
+const LandingPage = () => {
   return (
     <>
       <Navbar />
       <Hero />
-      <Products />
-      <About />
-      <Testimonial />
+      <HowItWorks />
+      <MonitorAnalytics />
+      <OurPromise />
       <Footer />
     </>
   );
 };
+
+export default LandingPage;

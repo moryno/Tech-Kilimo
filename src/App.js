@@ -8,6 +8,7 @@ import { useSelector } from "react-redux";
 import Profile from "./pages/dashboard/Profile";
 import Home from "./pages/dashboard/Home";
 import Layout from "./components/dashboard/Layout";
+import LandingPage from "./pages/landing-page/LandingPage";
 
 function App() {
   // const ProtectedRoute = ({ children }) => {
@@ -18,18 +19,10 @@ function App() {
   // };
 
   const router = createBrowserRouter([
-    // {
-    //   path: "/",
-    //   element: <LandingPage />,
-    // },
-    // {
-    //   path: "/sign-in",
-    //   element: <SignIn />,
-    // },
-    // {
-    //   path: "/get-started",
-    //   element: <SignUp />,
-    // },
+    {
+      path: "/",
+      element: <LandingPage />,
+    },
     {
       path: "/",
       element: (
