@@ -11,6 +11,7 @@ import LandingPage from "./pages/landing-page/LandingPage";
 import Platform from "./pages/landing-page/Platform";
 import Layout from "./layouts/Layout";
 import FrontendLayout from "./layouts/FrontendLayout";
+import OffTakerProfile from "./pages/landing-page/OffTakerProfile";
 
 function App() {
   // const ProtectedRoute = ({ children }) => {
@@ -32,6 +33,10 @@ function App() {
         {
           path: "/platform",
           element: <Platform />,
+        },
+        {
+          path: "/off-taker/:id",
+          element: <OffTakerProfile />,
         },
       ],
     },
