@@ -10,7 +10,7 @@ const Navbar = ({ onShow }) => {
   };
 
   return (
-    <main className="w-full bg-topBarBg text-topBarText">
+    <main className="w-full bg-topBarBg text-topBarText sticky top-0 z-10">
       <section className="container mx-auto py-1  flex items-center justify-between">
         <article className="flex items-center">
           <h1 className="font-bold text-2xl cursor-pointer">Tech Kilimo</h1>

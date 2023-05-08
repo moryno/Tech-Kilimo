@@ -26,6 +26,7 @@ module.exports = {
         yellow: "#f39f32",
         orang: "#FFAA00",
         modal: "#C8C8C8",
+        loginBg: "#182527",
         menuBg: "#fff",
         formHeading: "#006FC9",
         formTitle: "#006FC9",

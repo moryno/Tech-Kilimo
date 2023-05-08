@@ -12,7 +12,7 @@ const Hero = () => {
             ground using a decentralised autonomous organisation that encourages
             the community to contribute through various initiatives.
           </p>
-          <button className="flex items-center mt-5 bg-button text-white rounded-3xl font-bold  py-2 px-4 w-fit">
+          <button className="flex items-center mt-5 bg-orang text-white rounded-3xl font-bold  py-2 px-4 w-fit">
             See Reports
           </button>
         </article>

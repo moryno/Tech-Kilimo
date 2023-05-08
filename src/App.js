@@ -12,6 +12,9 @@ import Platform from "./pages/landing-page/Platform";
 import Layout from "./layouts/Layout";
 import FrontendLayout from "./layouts/FrontendLayout";
 import OffTakerProfile from "./pages/landing-page/OffTakerProfile";
+import Login from "./pages/landing-page/Login";
+import Register from "./pages/landing-page/Register";
+import About from "./components/frontend/About";
 
 function App() {
   // const ProtectedRoute = ({ children }) => {
@@ -35,6 +38,10 @@ function App() {
           element: <Platform />,
         },
         {
+          path: "/our-story",
+          element: <About />,
+        },
+        {
           path: "/off-taker/:id",
           element: <OffTakerProfile />,
         },
@@ -53,6 +60,14 @@ function App() {
           element: <Home />,
         },
       ],
+    },
+    {
+      path: "/login",
+      element: <Login />,
+    },
+    {
+      path: "/register",
+      element: <Register />,
     },
   ]);
   return <RouterProvider router={router} />;
