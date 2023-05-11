@@ -20,19 +20,19 @@ const Navbar = ({ onShow }) => {
             <NavLink to="/">
               <li className="text-base">Home</li>
             </NavLink>
-            <NavLink to="/posts">
+            <NavLink to="/our-story">
               <li className="text-base hover:text-textHeavy">About</li>
             </NavLink>
-            <NavLink to="/about">
+            <NavLink to="/platform">
               <li className="text-base">Farmers-data</li>
             </NavLink>
-            <NavLink to="/about">
+            <NavLink to="/platform">
               <li className="text-base">Off-takers</li>
             </NavLink>
           </ul>
         </article>
         <article className="hidden md:flex">
-          <NavLink to="/about">
+          <NavLink to="/login">
             <li className="text-base">Sign-in</li>
           </NavLink>
         </article>

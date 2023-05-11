@@ -37,7 +37,7 @@ const Register = () => {
   };
 
   return (
-    <main className="min-h-screen flex items-center justify-center bg-landingBg">
+    <main className="min-h-screen flex items-center justify-center bg-loginBg">
       <section className="w-5/6 md:w-1/2 md:min-h-[500px] lg:min-h-[600px] flex bg-white flex-col md:flex-row-reverse rounded-[10px] overflow-hidden">
         <article className="w-full md:w-1/2 bg-bgxLight flex flex-col p-5 text-menu gap-8">
           <h1 className="text-3xl md:text-4xl">iBusiness.</h1>
@@ -118,7 +118,7 @@ const Register = () => {
             {error && (
               <p className=" text-red-600 font-medium text-sm">{error}</p>
             )}
-            <button className="py-2 px-2.5 w-fit cursor-pointer border-none text-xs bg-contactButton text-white font-bold">
+            <button className="py-2 px-2.5 w-fit cursor-pointer border-none text-xs bg-greenButton text-white font-bold">
               Register
             </button>
           </form>

@@ -39,7 +39,7 @@ const Login = () => {
   // }, [search, dispatch]);
 
   return (
-    <main className="h-screen flex items-center justify-center bg-landingBg">
+    <main className="h-screen flex items-center justify-center bg-loginBg">
       <section className="w-5/6 md:w-1/2 md:min-h-[500px] min-h-[500px] flex bg-white flex-col-reverse md:flex-row-reverse rounded-[10px] overflow-hidden">
         <article className="w-full md:w-1/2 p-5">
           <h1 className="text-menu text-lg font-semibold">Login</h1>
@@ -64,7 +64,7 @@ const Login = () => {
             <div className="flex flex-col gap-3 items-center">
               <span
                 // onClick={handleLogin}
-                className="py-2 px-2.5 w-full cursor-pointer text-white text-center  border-none  bg-contactButton  font-bold"
+                className="py-2 px-2.5 w-full cursor-pointer text-white text-center  border-none  bg-greenButton  font-bold"
               >
                 Login
               </span>

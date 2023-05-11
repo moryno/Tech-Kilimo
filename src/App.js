@@ -15,6 +15,7 @@ import OffTakerProfile from "./pages/landing-page/OffTakerProfile";
 import Login from "./pages/landing-page/Login";
 import Register from "./pages/landing-page/Register";
 import About from "./components/frontend/About";
+import HomePage from "./pages/dashboard/HomePage";
 
 function App() {
   // const ProtectedRoute = ({ children }) => {
@@ -57,7 +58,7 @@ function App() {
       children: [
         {
           path: "/dashboard",
-          element: <Home />,
+          element: <HomePage />,
         },
       ],
     },

@@ -1,10 +1,10 @@
 import { MdOutlineFavorite } from "react-icons/md";
 const OffTaker = () => {
   return (
-    <main className="w-[23%] h-[40vh] box-border">
-      <section className="h-[20vh] flex justify-center  items-center rounded-md overflow-hidden">
+    <main className="w-[23%] h-[40vh] box-border cursor-pointer">
+      <section className="h-[20vh] w-full flex justify-center items-center rounded-md overflow-hidden">
         <img
-          className="w-full h-full object-cover"
+          className="w-full max-h-full object-cover"
           src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
           alt="profile"
         />

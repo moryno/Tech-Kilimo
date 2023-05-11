@@ -1,7 +1,7 @@
 const About = () => {
   return (
     <main>
-      <section className="container mx-auto flex">
+      <section className="container mx-auto py-10 flex">
         <section className="w-6/12 box-border p-5">
           <article>
             <h1 className="font-semibold text-xl mb-10">Our Story</h1>
@@ -47,7 +47,15 @@ const About = () => {
             </p>
           </article>
         </section>
-        <section className="w-6/12 box-border p-5"></section>
+        <section className="w-6/12 box-border p-5">
+          <article className="h-[70vh] w-[80%] flex items-center justify-center">
+            <img
+              className="object-cover max-h-full min-w-full"
+              src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+              alt="profile"
+            />
+          </article>
+        </section>
       </section>
     </main>
   );
